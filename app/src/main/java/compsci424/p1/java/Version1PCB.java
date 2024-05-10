@@ -3,10 +3,16 @@
  */
 package compsci424.p1.java;
 
-/**
- * The process control block structure that is used to track a
- * process's parent and children (if any) in Version 1.
- */
+import java.util.LinkedList;
+
 public class Version1PCB {
-    
+	int parent;
+	LinkedList<Integer> children;
+	
+	
+	public Version1PCB(int parent) {
+		this.parent = parent;
+		this.children = new LinkedList<>();
+		
+	}
 }
